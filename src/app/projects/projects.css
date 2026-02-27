@@ -1,0 +1,105 @@
+/* PROJECTS SECTION */
+.projects {
+  padding: 70px 20px;
+  font-weight: 500;
+      font-family: "Nunito", sans-serif;
+              font-size: 2.5rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h5 {
+  color: #06A3DA; /* Projects heading color same as S2S site */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title h1 {
+  font-size: 34px;
+  color: #091E3E; /* Main heading color same as S2S site */
+}
+
+/* GRID */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* CARD STYLE */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* ensures image stays inside card when zoomed */
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 350px; /* fixed height for all cards */
+}
+
+/* Remove card hover effect */
+.card:hover {
+  /* no transform on card itself */
+  /* no box-shadow change */
+}
+
+/* IMAGE STYLE */
+.card img {
+  width: 100%;
+  height: 180px; /* a bit taller */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease; /* smooth zoom */
+}
+
+/* IMAGE ZOOM ON HOVER */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* CARD TEXT */
+.card h3 {
+  color: #06A3DA;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.category {
+  color: #06A3DA;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  flex-grow: 1; 
+  text-align: center;
+}
+
+/* RESPONSIVE GRID */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

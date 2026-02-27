@@ -1,0 +1,56 @@
+.testimonial-section {
+    padding: 70px 0;
+    text-align: center;
+}
+.mini-title {
+    color: #06A3DA;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.main-title {
+    font-size: 42px;
+    color: #0b2c4d;
+    margin: 10px 0 20px;
+}
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-track {
+    display: flex;
+    gap: 30px;
+    animation: scroll 10s linear infinite;
+}
+.card {
+    background: #fff;
+    min-width: 360px;
+    padding: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: left;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+.card h3 {
+    color: #06A3DA;
+    margin: 5px 0;
+}
+.subtit {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.p{
+    color: #555;
+    line-height: 1.6;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
