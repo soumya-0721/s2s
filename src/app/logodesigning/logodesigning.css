@@ -2,7 +2,6 @@
     padding: 70px 40px;
     font-family: 'Segoe UI', sans-serif;
 }
-
 .container {
     display: flex;
     align-items: center;
@@ -11,38 +10,32 @@
     max-width: 1200px;
     margin: auto;
 }
-
 .content-left {
     flex: 1;
 }
-
 .section-title {
     color: #1696c8;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 25px;
 }
-
 .description {
     color: #5c6773;
     font-size: 17px;
     line-height: 1.8;
     margin-bottom: 40px;
 }
-
 .quote {
     color: #1696c8;
     font-size: 22px;
     font-weight: 600;
     line-height: 1.5;
 }
-
 .content-right {
     flex: 1;
     display: flex;
     justify-content: center;
 }
-
 .content-right img {
     width: 450px;   
     max-width: 100%;

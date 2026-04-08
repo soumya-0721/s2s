@@ -1,4 +1,4 @@
-.testimonial-section {
+/* .testimonial-section {
     padding: 70px 0;
     text-align: center;
 }
@@ -53,4 +53,92 @@
     100% {
         transform: translateX(-50%);
     }
+} */       
+
+
+
+
+
+
+
+
+.testimonial-section {
+  padding: 100px 0;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+.mini-title {
+  color: #06A3DA;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+}
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+}
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+.card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 300px;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px auto;
+  border-radius: 0;  
+  padding: 0;        
+  background: none;  
+}
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.subtit {
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 260px;
+  }
 }

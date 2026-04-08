@@ -8,14 +8,12 @@
   max-width:1300px;
   margin:auto;
 }
-
 .images img{
   height:70px;         
   width:120px;         
   object-fit:contain;  
     transition:0.3s ease;
 }
-
 .images img:hover{
   transform:scale(1.05);
 }

@@ -1,4 +1,4 @@
-.services {
+/* .services {
   max-width: 1200px;
   margin: 60px auto;
   text-align: center;
@@ -117,5 +117,117 @@
   }
   .service-card {
     width: 100%;
+  }
+} */
+
+
+
+
+
+
+.services {
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+.section-title {
+  color: #06A3DA;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+.ecommerce {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+.service-card {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 340px;
+  padding: 45px 30px 90px;
+  position: relative;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+.plan-img {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 25px;
+}
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f2744;
+  margin-bottom: 15px;
+}
+.service-card p {
+  color: #6b7a90;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px;
+  text-align: left;
+}
+.list li {
+  font-size: 14px;
+  padding: 6px 0;
+  color: #6b7a90;
+}
+.contact-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  padding: 12px 34px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #06A3DA, #0f2744);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-btn:hover {
+  transform: translateX(-50%) translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, #0f2744, #06A3DA);
+}
+.contact-btn:active {
+  transform: translateX(-50%) scale(0.97);
+}
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  .ecommerce {
+    grid-column: auto;
+  }
+  .service-card {
+    width: 100%;
+  }
+  .section-title {
+    font-size: 26px;
   }
 }

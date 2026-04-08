@@ -12,11 +12,12 @@ import { Price } from '../../price/price';
 import { Projects } from '../../projects/projects';
 import { Contact } from '../../contact/contact';
 import { Section6 } from './section6/section6';
-import { Websitedesign } from '../../websitedesign/websitedesign';
+import { Internship } from '../../internship/internship';
+
 
 @Component({
   selector: 'app-home',
-  imports: [Header,RouterLink,Section1,Section2,Section3,Section4,Section5,Footer,About,Price,Projects,Contact,Section6],
+  imports: [Header,Section1,Section2,Section3,Section4,Section5,Footer,About,Price,Projects,Contact,Section6,Internship],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

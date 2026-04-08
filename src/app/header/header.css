@@ -62,11 +62,9 @@
   background-color: #ff6a00;
   transition: width 0.3s ease;
 }
-
 .menu li a:hover {
   color: #ff6a00;
 }
-
 .menu li a:hover::after {
   width: 100%;
 }
@@ -76,7 +74,7 @@
 }
 .dropdown-menu {
   position: absolute;
-  top: 100%;   /* instead of 30px */
+  top: 100%;   
   left: 0;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -84,9 +82,7 @@
   padding-top: 10px;
   width: 180px;
   display: none; 
-    /* IMPORTANT */
 }
-
 .dropdown-menu li {
   padding: 8px 15px;
 }

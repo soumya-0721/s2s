@@ -2,7 +2,6 @@
     padding: 70px 40px;
     font-family: 'Segoe UI', sans-serif;
 }
-
 .container {
     display: flex;
     align-items: center;
@@ -11,7 +10,6 @@
     max-width: 1200px;
     margin: auto;
 }
-
 .content-left {
     flex: 1;
 }
